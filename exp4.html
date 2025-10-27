@@ -4,62 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiment-5</title>
+    <title>Document</title>
+    <style>
+        input {
+            width: 200px;
+            margin: 5px;
+        }
+
+        #number {
+            width: 50px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            text-align: right;
+        }
+#date {
+            width: 100px;
+        }
+
+        legend {
+            padding-bottom: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <form action="response.html" name="SS" target="_blank" method="post">
-
-        <fieldset>
-
+    <form action="./response.html" name="Form" target="_blank" method="">
+        <Fieldset style="width: 400px; margin: auto; border: 1px solid black;border-top: 3px solid black; padding: 10px;">
             <center>
-                <h1>Student Registration Form</h1>
+                <legend><h2>Hotel Room Booking Form</h2></b></legend>
+
+                <label for="fname">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="" required>
+                <br>
+                <label for="Email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="" required>
+                <br>
+                <label for="Phone">Phone:</label>
+                <input type="tel" id="phone" name="email" placeholder="" required>
+                <br>
+<label for="Check-in-date">Check-in-Date:</label>
+                <input type="date" id="date" name="phone" placeholder="">
+                <br>
+                <label for="Check-out-Date">Check-out-Date:</label>
+                <input type="date" id="date" name="date" placeholder="">
+                <br>
+                <label for="Room Type">Room Type:</label>
+                <select name="select" placeholder="Select from these">
+                    <option value="Single Room">Single Room</option>
+                    <option value="Double Room">Double Room</option>
+</select>
+                <br>
+                <label for="Number of guests">Number of Guests:</label>
+                <input type="number" id="number" name="number of guests">
+                <br>
+                <label for="Special Request">Special Request:</label>
+                <br>
+                <textarea style="width:300px; height: 60px;"></textarea>
+                <br>
+                <button>Book Now</button>
+                <button>Reset Form</button>
+
+
+
             </center>
-            <legend></legend>
-<hr>
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br>
-            <br>
-<label for="Email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter valid email address" required><br><br>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
-
-            <label for="Gender">Gender:</label>
-            <input type="radio" id="male" name="gender" value="male" required> <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female" required> <label for="Female">Female</label>
-            <input type="radio" id="female" name="gender" value="other" required> <label for="other">Other</label>
- <br><br>
-            <label for="Course">Course:</label>
-            <select name="course" id="course" required>
-                <option>--Select Course--</option>
-                <option value="BTech">B.Tech</option>
-                <option value="B.Sc">B.Sc</option>
-                <option value="B.Com">B.Com</option>
-                <option value="MBBS">MBBS</option>
-                <option value="B.Pharm">B.Pharm</option>
-                <option value="B.Arch">B.Arch</option>
-            </select>
-            <br><br>
-            <label for="Contact">Contact No:</label>
-<input type="tel" id="phone" name="phone" placeholder="Enter phone number">
-            <br><br>
-            <label for="Address">Address:</label><br>
-            <textarea type="address" id="address" name="address" placeholder="Enter your address" rows="5"
-                cols="45"></textarea>
-            <br><br>
-            <button>Register</button>
-            <button>Clear</button>
-
-            <hr>
-            <center>
-                <p>&copy;2025 Student Registration Portal</p>
-            </center>
-            <br><br>
-        </fieldset>
+        </Fieldset>
     </form>
-
 </body>
 
 </html>
